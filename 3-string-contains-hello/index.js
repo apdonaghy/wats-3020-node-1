@@ -17,7 +17,7 @@ console.log("To include spaces, use quotes.")
 // check to see if string contains hello
 // if it does report back the position in the string where it begins
 else {
-  // TODO write a logical expression to test if the input contains a "hello"
+
   if (input.indexOf('hello') > -1) {
     console.log(`hello was found at position ${input.indexOf('hello')} of the string (input)`);
   } else {
