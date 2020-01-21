@@ -10,3 +10,17 @@
 // get an integer using getargs
 let getargs = require("../modules/getargs/index.js");
 let input = getargs.getIntegerArg();
+
+
+
+if (isNaN(input) || !Number.isInteger(input)) {
+  console.log("usage: node 5-mini-app <integer>");
+} 
+
+ else {
+   let kilobytes = (input / 1000).toFixed();
+   let bytes = input % 1000;
+   let klo = (kilobytes == 1) ? "kilobyte" : "kilobytes";
+   let bts = (bytes == 1) ? "byte" : "bytes";
+  console.log(`${input} bytes is ${kilobytes} ${klo} ${bytes} ${bts} `)
+}
